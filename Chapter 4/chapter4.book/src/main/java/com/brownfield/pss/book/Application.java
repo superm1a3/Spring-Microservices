@@ -16,14 +16,11 @@ import com.brownfield.pss.book.component.BookingComponent;
 import com.brownfield.pss.book.entity.BookingRecord;
 import com.brownfield.pss.book.entity.Inventory;
 import com.brownfield.pss.book.entity.Passenger;
-import com.brownfield.pss.book.repository.BookingRepository;
 import com.brownfield.pss.book.repository.InventoryRepository;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner{
 	private static final Logger logger = LoggerFactory.getLogger(Application.class);
-	@Autowired
-	private BookingRepository bookingRepository;
 	
 	@Autowired
 	private BookingComponent bookingComponent;
