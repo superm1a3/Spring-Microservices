@@ -26,7 +26,7 @@ public class CheckinComponent {
 		checkIn.setCheckInTime(new Date());
 		logger.info("Saving checkin ");
 		//save
-		long id = checkinRepository.save(checkIn).getId();
+		long id = checkinRepository.save(checkIn).getBookingId();
 		logger.info("Successfully saved checkin ");
 		//send a message back to booking to update status
 		logger.info("Sending booking id "+ id);
